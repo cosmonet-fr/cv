@@ -1,0 +1,205 @@
+@import "colors.scss";
+$widthLeft: 25%;
+@import "minireset.scss";
+*{
+  font-family: sans-serif;
+  color: $color1;
+}
+body {
+  background-color: $colorBackground1;
+  #body{
+    display: flex;
+    justify-content: flex-start;
+    }
+}
+p {
+  text-align: justify;
+}
+
+h1 {
+  font-size: 3em;
+  margin-top: 3.5em;
+  span{
+    color: $colorBackground2;
+    font-weight: bold;
+  }
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: $color2;
+  span {
+    text-decoration: underline $colorBackground2;
+
+  }
+}
+h3 {
+  font-size: 1.5em;
+  color: $color1;
+}
+
+.left {
+  background-color: $colorBackground2;
+  width: $widthLeft;
+  h3 {
+    text-align: center;
+    padding: 0.2em;
+    font-weight: bold;
+    color: $colorBackground2;
+    background-color: $color2;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    border-radius: 50%;
+    border: solid $colorBorder;
+  }
+  p {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    color: $color1;
+
+  }
+}
+hr {
+  border: 0.05em solid;
+  color: $colorBackground2;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.right {
+  margin-left: 3em;
+  width: 75%;
+}
+ul {
+  list-style: none;
+}
+li::before {
+  content: "• ";
+  color: $colorBackground2;
+}
+
+header{
+  margin-bottom: 10em;
+}
+.event, .boxRecommandation{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+.date{
+  width: 35%;
+}
+.abstract{
+  width: 55%;
+  h2{
+    font-size: 1.2em;
+    font-variant-caps: small-caps;
+    margin-bottom: 9px;
+  }
+  h3{
+    font-size: 1em;
+    margin-bottom: 9px;
+  }
+}
+.eventRecommandation {
+  width: 50%;
+  h3{
+    font-size: 1.2em;
+    font-variant-caps: small-caps;
+  }
+}
+#footer {
+  display: flex;
+  justify-content: flex-start;
+}
+.hobbies {
+  display: flex;
+  justify-content: space-around;
+  img {
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    margin-top: 28px;
+    border: solid $color2;
+  }
+}
+footer {
+  background-color: $color2;
+  p {
+    color: $colorBackground2;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #body {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  p {
+    font-size: 2em;
+  }
+  .left, .right {
+    width: 100%;
+  }
+  .left {
+    img{
+      display: none;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  h1 {
+    font-size: 6em;
+  }
+  h2 {
+    font-size: 2.4em;
+  }
+  h3 {
+    font-size: 3em;
+  }
+  ul {
+    font-size: 1.5em;
+  }
+  br {
+    display: none;
+  }
+  .event, .boxRecommandation{
+    display: flex;
+    flex-direction: column;
+  }
+  .date, .abstract {
+    width: 90%;
+  }
+  .abstract h3 {
+    font-size: 2.4em;
+  }
+  .abstract h2 {
+    font-size: 2.4em;
+  }
+  #footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .hobbies {
+    img {
+      display: flex;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 28px;
+    }
+  }
+  .boxRecommandation {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
