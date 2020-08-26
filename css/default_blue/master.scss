@@ -1,5 +1,5 @@
 @import "colors.scss";
-$widthLeft: 25%;
+$widthLeft: 20%;
 @import "minireset.scss";
 *{
   font-family: sans-serif;
@@ -40,10 +40,10 @@ h1 {
 h2 {
   font-size: 1.2em;
   font-weight: bold;
-  color: $color2;
+  color: $color1;
   span {
     text-decoration: underline $colorBackground2;
-    color: $color2;
+    color: $color1;
 
   }
 }
@@ -104,6 +104,7 @@ li::before {
 header{
   margin-bottom: 10em;
 }
+
 .event, .boxRecommandation{
   display: flex;
   justify-content: space-around;
@@ -148,17 +149,27 @@ header{
 }
 .skills {
   color: $colorBackground2;
-  margin-bottom: 2rem;
+  margin: 2rem;
 }
 .skillsbox{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  //@media screen and (max-width: 1024px) {
+  //  justify-content: center;
+  //  flex-direction: column;
+  //}
 }
+.listskills ul {
+  list-style: disclosure-closed;
+  color: blue;
+}
+
 footer {
+margin-bottom: 1em;
   p {
     color: $colorBackground2;
-    text-align: right;
-    margin-right: 10px;
+    text-align: center;
   }
 }
 @media screen and (max-width: 1024px) {

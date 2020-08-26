@@ -1,6 +1,6 @@
 {
 	"version": 3,
-	"file": "colors.css",
+	"file": "colors.min.css",
 	"sources": [
 		"colors.scss"
 	],
