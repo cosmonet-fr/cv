@@ -63,7 +63,7 @@ h3 {
     color: $colorBackground2;
     background-color: $color2;
   }
-  img {
+  img, {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -132,6 +132,9 @@ header{
     font-variant-caps: small-caps;
   }
 }
+.city {
+  margin-left: 1em;
+}
 #footer {
   display: flex;
   justify-content: flex-start;
@@ -162,9 +165,25 @@ header{
   //}
 }
 
+.gsmHeader {
+  img, {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10em;
+    margin-bottom: -16em;
+    border-radius: 50%;
+    width: 45em;
+    height: 45em;
+    border: solid $colorBorder;
+  }
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
 .softskillsbox {
   margin-top: 2em;
-  width: 85%;
+  width: 51%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -180,6 +199,21 @@ header{
   }
   ul {
     font-size: 1em;
+  }
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 2em;
+    ul {
+      //display: flex;
+      //flex-wrap: wrap;
+      //justify-content: space-between;
+
+    }
+    li {
+      font-size: 3em;
+    }
+    //li::before {
+    //  content: "";
+    //}
   }
 
 }
@@ -198,7 +232,7 @@ margin-bottom: 1em;
     flex-direction: column-reverse;
   }
   p {
-    font-size: 2em;
+    font-size: 3em;
   }
   .gsm{
     display: inline;
@@ -218,6 +252,7 @@ margin-bottom: 1em;
     }
     p {
       text-align: center;
+      margin-top: 0.7em;
     }
   }
   h1 {
@@ -227,13 +262,19 @@ margin-bottom: 1em;
     font-size: 2.4em;
   }
   h3 {
-    font-size: 3em;
+    font-size: 3.8em;
   }
   ul {
     font-size: 1.5em;
   }
   br {
-    display: none;
+    //display: none;
+  }
+  li {
+    font-size: 2em;
+  }
+  .city {
+    color: $color3;
   }
   .event, .boxRecommandation{
     display: flex;
@@ -243,10 +284,16 @@ margin-bottom: 1em;
     width: 90%;
   }
   .abstract h3 {
-    font-size: 2.4em;
+    font-size: 3.4em;
+    font-weight: bold;
+    font-variant-caps: small-caps;
+
   }
   .abstract h2 {
-    font-size: 2.4em;
+    font-size: 3.8em;
+  }
+  .event {
+    margin: 6em 0;
   }
   #footer {
     display: flex;
@@ -264,5 +311,6 @@ margin-bottom: 1em;
     display: flex;
     flex-direction: row;
   }
+
 
 }

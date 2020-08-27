@@ -202,6 +202,10 @@ header {
   font-variant-caps: small-caps;
 }
 
+.city {
+  margin-left: 1em;
+}
+
 #footer {
   display: flex;
   justify-content: flex-start;
@@ -232,9 +236,27 @@ header {
   flex-wrap: wrap;
 }
 
+.gsmHeader img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10em;
+  margin-bottom: -16em;
+  border-radius: 50%;
+  width: 45em;
+  height: 45em;
+  border: solid #2980b9;
+}
+
+@media screen and (min-width: 1024px) {
+  .gsmHeader {
+    display: none;
+  }
+}
+
 .softskillsbox {
   margin-top: 2em;
-  width: 85%;
+  width: 51%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -255,6 +277,15 @@ header {
   font-size: 1em;
 }
 
+@media screen and (max-width: 1024px) {
+  .softskillsbox {
+    margin-bottom: 2em;
+  }
+  .softskillsbox li {
+    font-size: 3em;
+  }
+}
+
 footer {
   margin-bottom: 1em;
 }
@@ -270,7 +301,7 @@ footer p {
     flex-direction: column-reverse;
   }
   p {
-    font-size: 2em;
+    font-size: 3em;
   }
   .gsm {
     display: inline;
@@ -289,6 +320,7 @@ footer p {
   }
   .left p {
     text-align: center;
+    margin-top: 0.7em;
   }
   h1 {
     font-size: 6em;
@@ -297,13 +329,16 @@ footer p {
     font-size: 2.4em;
   }
   h3 {
-    font-size: 3em;
+    font-size: 3.8em;
   }
   ul {
     font-size: 1.5em;
   }
-  br {
-    display: none;
+  li {
+    font-size: 2em;
+  }
+  .city {
+    color: #9E9E9E;
   }
   .event, .boxRecommandation {
     display: flex;
@@ -313,10 +348,15 @@ footer p {
     width: 90%;
   }
   .abstract h3 {
-    font-size: 2.4em;
+    font-size: 3.4em;
+    font-weight: bold;
+    font-variant-caps: small-caps;
   }
   .abstract h2 {
-    font-size: 2.4em;
+    font-size: 3.8em;
+  }
+  .event {
+    margin: 6em 0;
   }
   #footer {
     display: flex;
