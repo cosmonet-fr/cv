@@ -156,6 +156,19 @@ header{
   margin: 2rem;
 }
 .skillsbox{
+  a {
+    transition: all .4s ease-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+    i {
+      transition: all .2s;
+      &:hover {
+        color: $colorBackground2Hover;
+        //text-shadow: #59A5D7 1px 0 10px;
+      }
+    }
+  }
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

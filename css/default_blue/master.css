@@ -236,6 +236,22 @@ header {
   flex-wrap: wrap;
 }
 
+.skillsbox a {
+  transition: all .4s ease-out;
+}
+
+.skillsbox a:hover {
+  transform: scale(1.2);
+}
+
+.skillsbox a i {
+  transition: all .2s;
+}
+
+.skillsbox a i:hover {
+  color: #59A5D7;
+}
+
 .gsmHeader img {
   display: block;
   margin-left: auto;
