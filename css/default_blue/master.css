@@ -150,6 +150,10 @@ hr {
   margin-bottom: 1em;
 }
 
+.contact a {
+  color: white;
+}
+
 .right {
   margin-left: 3em;
   width: 75%;
